@@ -1,0 +1,22 @@
+-- This is a simple SQL query to select all records from a table named 'Customers'
+SELECT * FROM Customers;
+
+-- This is a simple SQL query to insert a new record into a table named 'Customers'
+INSERT INTO Customers (CustomerID, CustomerName, ContactName, Country)
+VALUES (1, 'Alfreds Futterkiste', 'Maria Anders', 'Germany');
+
+-- This is a simple SQL query to update a record in a table named 'Customers'
+UPDATE Customers
+SET ContactName = 'Juan'
+WHERE CustomerID = 1;
+
+-- This is a simple SQL query to delete a record from a table named 'Customers'
+DELETE FROM Customers WHERE CustomerID = 1;
+
+-- This is a simple SQL query to create a table named 'Employees'
+CREATE TABLE Employees (
+    EmployeeID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Age int
+);
